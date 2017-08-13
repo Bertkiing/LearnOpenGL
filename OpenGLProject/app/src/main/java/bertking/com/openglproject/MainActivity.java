@@ -1,8 +1,10 @@
 package bertking.com.openglproject;
 
+import android.content.Intent;
 import android.opengl.GLSurfaceView;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
@@ -10,7 +12,9 @@ import javax.microedition.khronos.opengles.GL10;
 /**
  * 参考链接：http://blog.csdn.net/chenjie19891104/article/details/6311209
  */
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    public static final String TAG = "MainActivity".getClass().getSimpleName();
+
     private GLSurfaceView mGLSurfaceView;
 
     @Override
@@ -19,6 +23,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mGLSurfaceView = (GLSurfaceView) findViewById(R.id.glSurfaceView);
         mGLSurfaceView.setRenderer(new MyRenderer());
+
+        findViewById(R.id.tv_title).setOnClickListener(this);
+
+
+
 
     }
 
@@ -34,6 +43,18 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         //当Activity恢复时，告诉GLSurfaceView加载资源，继续渲染
         mGLSurfaceView.onResume();
+    }
+
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+        switch (id){
+            case R.id.tv_title:
+                Intent intent = new Intent(this,TextRxJavaActivity.class);
+                startActivity(intent);
+                break;
+
+        }
     }
 }
 
