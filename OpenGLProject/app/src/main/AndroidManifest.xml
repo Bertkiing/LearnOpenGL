@@ -21,6 +21,8 @@
         </activity>
         <activity android:name=".BethesthActivity">
         </activity>
+        <activity android:name=".RxJavaOperatorActivity">
+        </activity>
     </application>
 
 </manifest>

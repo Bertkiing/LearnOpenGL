@@ -3,7 +3,9 @@ package bertking.com.openglproject;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 
+import bertking.com.openglproject.util.Util;
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
@@ -135,5 +137,12 @@ public class RxjavaThreadActivity extends AppCompatActivity {
     }
 
 
-
+    public void onClick(View view) {
+        int id = view.getId();
+        switch (id){
+            case R.id.btn_operator:
+                Util.startOtherActivity(this,RxJavaOperatorActivity.class);
+                break;
+        }
+    }
 }
