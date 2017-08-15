@@ -1,6 +1,5 @@
 package bertking.com.openglproject;
 
-import android.content.Intent;
 import android.opengl.GLSurfaceView;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +7,8 @@ import android.view.View;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
+
+import bertking.com.openglproject.util.Util;
 
 /**
  * 参考链接：http://blog.csdn.net/chenjie19891104/article/details/6311209
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mGLSurfaceView.setRenderer(new MyRenderer());
 
         findViewById(R.id.tv_title).setOnClickListener(this);
-
+        findViewById(R.id.btn_bethes).setOnClickListener(this);
 
 
 
@@ -50,10 +51,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int id = v.getId();
         switch (id){
             case R.id.tv_title:
-                Intent intent = new Intent(this,TextRxJavaActivity.class);
-                startActivity(intent);
+                Util.startOtherActivity(this,TextRxJavaActivity.class);
                 break;
-
+            case R.id.btn_bethes:
+                Util.startOtherActivity(this,BethesthActivity.class);
+                break;
         }
     }
 }

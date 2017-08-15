@@ -23,4 +23,13 @@
         android:layout_below="@id/tv_title"
         android:layout_marginTop="10dp"
         />
+    <Button
+        android:id="@+id/btn_bethes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/glSurfaceView"
+        android:layout_centerHorizontal="true"
+        android:text="贝塞斯"
+        android:background="@android:color/transparent"
+        />
 </RelativeLayout>
