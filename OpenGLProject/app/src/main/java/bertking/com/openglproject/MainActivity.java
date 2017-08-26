@@ -8,6 +8,8 @@ import android.view.View;
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
+import bertking.com.openglproject.activity.Scroller1Activity;
+import bertking.com.openglproject.activity.TextRxJavaActivity;
 import bertking.com.openglproject.util.Util;
 
 /**

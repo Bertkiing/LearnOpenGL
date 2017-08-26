@@ -1,0 +1,20 @@
+链接：https://developer.android.com/guide/topics/graphics/drawable-animation.html
+API: https://developer.android.com/reference/android/graphics/drawable/AnimationDrawable.html
+
+逐帧动画(Drawable Animation) 让我们去加载一系列的Drawable资源来创建动画。它指的是用不同的一些图片，顺序播放
+，just like a 电影，从这个角度来讲，它属于传统的动画。
+
+AnimationDrawable类是逐帧动画的基础。
+
+虽然我们可以利用AnimationDrawable类的API来用代码定义Drawable动画的框架，但是更简便的做法是：使用单个xml文件
+来完成构造动画的框架。这里需要注意的是：该动画的xml文件属于我们项目的res/drawable/目录下。
+
+该xml的根节点是<animation-list>元素和定义每一帧的item节点：帧的 可绘制资源 和 帧持续的时间 组成。
+
+我们可以将该xml作为某些View的背景，然后通过view.getBackground() or getDrawable()来强转为AnimationDrawable。
+然后通过调用start()来启动动画。这里需要注意的是：在Activity的onCreate()方法中，调用start()无效，因为
+AnimationDrawable尚未完全attached to the Window。
+
+如果调用 oneShot()方法，表示该动画只循环一次。默认无限循环。
+也可以在<animation-list>的属性中添加。
+

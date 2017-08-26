@@ -1,10 +1,11 @@
-package bertking.com.openglproject;
+package bertking.com.openglproject.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
+import bertking.com.openglproject.R;
 import bertking.com.openglproject.util.Util;
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;

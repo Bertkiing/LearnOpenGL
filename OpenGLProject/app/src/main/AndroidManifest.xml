@@ -16,15 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".TextRxJavaActivity">
+        <activity android:name=".activity.TextRxJavaActivity">
         </activity>
-        <activity android:name=".RxjavaThreadActivity">
+        <activity android:name=".activity.RxjavaThreadActivity">
         </activity>
         <activity android:name=".BethesthActivity">
         </activity>
-        <activity android:name=".RxJavaOperatorActivity">
+        <activity android:name=".activity.RxJavaOperatorActivity">
         </activity>
-        <activity android:name=".Scroller1Activity">
+        <activity android:name=".activity.Scroller1Activity">
         </activity>
     </application>
 
