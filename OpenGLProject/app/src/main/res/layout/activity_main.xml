@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="bertking.com.openglproject.MainActivity">
 
     <TextView
@@ -14,12 +15,13 @@
         android:text="非交互式GLSurfaceView"
         android:layout_centerHorizontal="true"
         android:textSize="18sp"
+        android:layout_gravity="center"
         />
 
     <android.opengl.GLSurfaceView
         android:id="@+id/glSurfaceView"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="200dp"
         android:layout_below="@id/tv_title"
         android:layout_marginTop="10dp"
         />
@@ -30,6 +32,21 @@
         android:layout_below="@id/glSurfaceView"
         android:layout_centerHorizontal="true"
         android:text="贝塞斯"
+        android:layout_gravity="center"
         android:background="@android:color/transparent"
         />
-</RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/btn_scroller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="仿IOS的弹性滚动效果"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        />
+</LinearLayout>

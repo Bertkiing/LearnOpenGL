@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.tv_title).setOnClickListener(this);
         findViewById(R.id.btn_bethes).setOnClickListener(this);
+        findViewById(R.id.btn_scroller).setOnClickListener(this);
 
 
 
@@ -55,6 +56,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_bethes:
                 Util.startOtherActivity(this,BethesthActivity.class);
+                break;
+            case R.id.btn_scroller:
+                Util.startOtherActivity(this,Scroller1Activity.class);
                 break;
         }
     }

@@ -13,6 +13,10 @@ import io.reactivex.Observer;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.Disposable;
 
+/**
+ * 理解Rxjava的好文章：http://gank.io/post/560e15be2dca930e00da1083
+ * http://blog.csdn.net/lzyzsd/article/details/41833541?utm_source=androidweekly.cn&utm_medium=website
+ */
 public class TextRxJavaActivity extends AppCompatActivity implements View.OnClickListener {
     public static final String TAG = TextRxJavaActivity.class.getSimpleName();
 
