@@ -1,5 +1,6 @@
 package bertking.com.openglproject.activity;
 
+import android.app.Dialog;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 
 import bertking.com.openglproject.R;
+import bertking.com.openglproject.util.DialogUtils;
 import bertking.com.openglproject.util.LogUtil;
 import bertking.com.openglproject.util.ScreenUtil;
 
@@ -48,6 +50,8 @@ public class Scroller1Activity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         LogUtil.d("-------onResume--------------");
+        Dialog dialog = DialogUtils.createLoadingDialog(this, "加载动画...");
+        dialog.show();
     }
 
     @Override

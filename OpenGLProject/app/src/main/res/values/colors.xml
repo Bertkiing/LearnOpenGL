@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#222222</color>
+    <color name="colorPrimaryDark">#222222</color>
+    <color name="colorAccent">#f44336</color>
+
+    <color name="colorControlNormal">#FF78909C</color>
+
+    <color name="black">#111111</color>
+    <color name="grey">#929292</color>
+    <color name="white">#ffffff</color>
+    <color name="amber">#f06900</color>
+    <color name="mainColor">#f44336</color>
+    <color name="contractColor">#00b8d4</color>
+    <color name="backgroundColor">#eeeded</color>
+    <color name="toolBarBackgroundColor">#eeeded</color>
+    <color name="borderColor">#c8c7cc</color>
+    <color name="alphaGrey">#64000000</color>
+    <color name="transparence">#00000000</color>
+    <color name="alphaBlack">#33000000</color>
+
+    <color name="alpha80black">#CC000000</color>
+    <color name="alpha70black">#BB000000</color>
+    <color name="alpha5black">#22000000</color>
+    <color name="alphaWhite">#88ffffff</color>
+    <color name="mask">#cc000000</color>
+    <color name="transparent">#00000000</color>
+
+    <!--drawer-->
+    <color name="drawerTextColor">#333333</color>
+    <color name="drawerBackgroundColor">#f5f5f5</color>
+    <color name="drawerBorderColor">#e0e0e0</color>
+    <color name="background_material_light">#eeeded</color>
+
+
+    <color name="spots_dialog_color">@color/mainColor</color>
+
+
+    <!-- progress -->
+
+
+    <!-- 项目新增 color -->
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_323232">#323232</color>
+    <color name="color_ff4436">#ff4436</color>
+    <color name="color_f2f2f2">#f2f2f2</color>
+    <color name="color_f5f5f5">#f5f5f5</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_4c4c4c">#4c4c4c</color>
+    <color name="black_alpha_40">#66000000</color>
+    <color name="black_alpha_60">#99000000</color>
+    <color name="color_f0f0f0">#f0f0f0</color>
+    <color name="color_ebebeb">#ebebeb</color>
+
+    <color name="white_alpha_50">#88ffffff</color>
+    <color name="white_alpha_20">#33ffffff</color>
+    <color name="col_222222">#222222</color>
+
+
+
+    <color name="col_violet">#3f51b5</color>
 </resources>
