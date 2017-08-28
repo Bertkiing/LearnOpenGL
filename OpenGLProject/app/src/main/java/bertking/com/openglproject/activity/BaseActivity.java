@@ -14,8 +14,9 @@ import android.widget.TextView;
 
 /**
  * 参考链接：https://mp.weixin.qq.com/s/VCTPXO49dp2x3w7tOFPvvw
+ *  typeface:字型，字体
+ *  delegate：代理，委托
  *
- * 
  */
 
 public class BaseActivity extends AppCompatActivity {

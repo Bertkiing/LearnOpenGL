@@ -3,7 +3,6 @@ package bertking.com.openglproject.activity;
 import android.app.Dialog;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -13,7 +12,7 @@ import bertking.com.openglproject.util.DialogUtils;
 import bertking.com.openglproject.util.LogUtil;
 import bertking.com.openglproject.util.ScreenUtil;
 
-public class Scroller1Activity extends AppCompatActivity {
+public class Scroller1Activity extends BaseActivity {
 
     private AnimationDrawable mAnimationDrawable;
 
