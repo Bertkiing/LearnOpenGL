@@ -9,6 +9,7 @@ import android.graphics.Point;
 import android.util.AttributeSet;
 import android.view.View;
 
+import bertking.com.openglproject.util.LogUtil;
 import bertking.com.openglproject.util.ScreenUtil;
 
 /**
@@ -46,18 +47,25 @@ public class CreditScoreView extends View {
     private Paint mMainPaint;
 
 
+    /**
+     * 对于自定义View，最好初始化在最后的一个构造方法中，否则将会导致空指针异常：
+     * 我们可以将构造方法的super 替换为 this ，保证其构造方法的正确执行，然后将init操作放在最后被调用的构造方法。
+     * Java.Lang.NullPointerException: Attempt to invoke virtual method 'long android.graphics.Paint.getNativeInstance()' on a null object reference
+     * @param context
+     */
     public CreditScoreView(Context context) {
-        super(context, null);
-        init();
+        this(context, null);
+        LogUtil.d("-------构造方法 1----------");
     }
 
     public CreditScoreView(Context context, AttributeSet attrs) {
-        super(context, attrs, 0);
-        init();
+        this(context, attrs, 0);
+        LogUtil.d("-------构造方法 2----------");
     }
 
     public CreditScoreView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        LogUtil.d("-------构造方法 3----------");
         init();
     }
 
