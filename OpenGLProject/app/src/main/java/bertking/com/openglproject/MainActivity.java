@@ -8,6 +8,7 @@ import android.view.View;
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
+import bertking.com.openglproject.activity.CreditScoreActivity;
 import bertking.com.openglproject.activity.Scroller1Activity;
 import bertking.com.openglproject.activity.TextRxJavaActivity;
 import bertking.com.openglproject.util.Util;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.tv_title).setOnClickListener(this);
         findViewById(R.id.btn_bethes).setOnClickListener(this);
         findViewById(R.id.btn_scroller).setOnClickListener(this);
+        findViewById(R.id.btn_credit).setOnClickListener(this);
 
 
 
@@ -61,6 +63,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_scroller:
                 Util.startOtherActivity(this,Scroller1Activity.class);
+                break;
+            case R.id.btn_credit:
+                Util.startOtherActivity(this, CreditScoreActivity.class);
                 break;
         }
     }
