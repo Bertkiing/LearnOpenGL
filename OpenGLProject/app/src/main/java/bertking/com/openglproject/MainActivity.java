@@ -19,6 +19,7 @@ import bertking.com.openglproject.activity.OrientationActivity;
 import bertking.com.openglproject.activity.Scroller1Activity;
 import bertking.com.openglproject.activity.TestAAActivity;
 import bertking.com.openglproject.activity.TextRxJavaActivity;
+import bertking.com.openglproject.dragger2.Car;
 import bertking.com.openglproject.util.Util;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         mGLSurfaceView = (GLSurfaceView) findViewById(R.id.glSurfaceView);
         mGLSurfaceView.setRenderer(new MyRenderer());
-
+        new Car();
     }
 
     @Override
