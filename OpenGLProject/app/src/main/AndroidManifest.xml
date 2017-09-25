@@ -2,6 +2,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="bertking.com.openglproject">
 
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <!-- 访问网络 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 允许应用程序读写数据在外部存储设备（主要是SD卡） -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 状态获取 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 请求访问使用照相设备 -->
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -29,6 +42,15 @@
         <activity android:name=".activity.BaseActivity">
         </activity>
         <activity android:name=".activity.CreditScoreActivity">
+        </activity>
+        <activity
+            android:name=".activity.OrientationActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activity.TestAAActivity">
+        </activity>
+        <activity android:name=".activity.ApacheTestActivity">
         </activity>
     </application>
 

@@ -12,10 +12,10 @@
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="非交互式GLSurfaceView"
         android:layout_centerHorizontal="true"
-        android:textSize="18sp"
         android:layout_gravity="center"
+        android:text="非交互式GLSurfaceView"
+        android:textSize="18sp"
         />
 
     <android.opengl.GLSurfaceView
@@ -25,15 +25,16 @@
         android:layout_below="@id/tv_title"
         android:layout_marginTop="10dp"
         />
+
     <Button
         android:id="@+id/btn_bethes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/glSurfaceView"
         android:layout_centerHorizontal="true"
-        android:text="贝塞斯"
         android:layout_gravity="center"
         android:background="@android:color/transparent"
+        android:text="贝塞斯"
         />
 
     <View
@@ -45,17 +46,44 @@
         android:id="@+id/btn_scroller"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="仿IOS的弹性滚动效果"
         android:layout_gravity="center"
         android:background="@android:color/transparent"
+        android:text="仿IOS的弹性滚动效果"
         />
 
     <Button
         android:id="@+id/btn_credit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="仿支付宝信用分"
         android:layout_gravity="center"
         android:background="@android:color/transparent"
+        android:text="仿支付宝信用分"
+        />
+
+    <Button
+        android:id="@+id/btn_screen_orientation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:text="屏幕旋转"
+        />
+
+    <Button
+        android:id="@+id/btn_test_aa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:text="测试AA框架"
+        />
+
+    <Button
+        android:id="@+id/btn_test_apache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:text="测试Apache Common-lang框架"
         />
 </LinearLayout>

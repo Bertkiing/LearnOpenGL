@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/OpenGLProject.iml" filepath="$PROJECT_DIR$/OpenGLProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewserver/viewserver.iml" filepath="$PROJECT_DIR$/viewserver/viewserver.iml" />
     </modules>
   </component>
 </project>
