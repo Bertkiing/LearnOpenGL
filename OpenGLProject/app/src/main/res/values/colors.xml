@@ -32,6 +32,9 @@
     <color name="drawerBorderColor">#e0e0e0</color>
     <color name="background_material_light">#eeeded</color>
 
+    <color name="divider_white">#24ffffff</color>
+
+
 
     <color name="spots_dialog_color">@color/mainColor</color>
 

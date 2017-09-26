@@ -14,6 +14,7 @@ import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
 import bertking.com.openglproject.activity.ApacheTestActivity;
+import bertking.com.openglproject.activity.AsyncTaskActivity;
 import bertking.com.openglproject.activity.CreditScoreActivity;
 import bertking.com.openglproject.activity.OrientationActivity;
 import bertking.com.openglproject.activity.Scroller1Activity;
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         mGLSurfaceView = (GLSurfaceView) findViewById(R.id.glSurfaceView);
         mGLSurfaceView.setRenderer(new MyRenderer());
-        new Car();
+//        new Car();
     }
 
     @Override
@@ -75,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @OnClick({R.id.tv_title, R.id.btn_bethes, R.id.btn_scroller, R.id.btn_credit, R.id.btn_screen_orientation,
-            R.id.btn_test_aa,R.id.btn_test_apache})
+            R.id.btn_test_aa,R.id.btn_test_apache,R.id.btn_test_asyncTask})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_title:
@@ -98,6 +99,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn_test_apache:
                 Util.startOtherActivity(this, ApacheTestActivity.class);
+                break;
+            case R.id.btn_test_asyncTask:
+                Util.startOtherActivity(this, AsyncTaskActivity.class);
                 break;
         }
     }

@@ -86,4 +86,12 @@
         android:background="@android:color/transparent"
         android:text="测试Apache Common-lang框架"
         />
+    <Button
+        android:id="@+id/btn_test_asyncTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:text="测试AsyncTask"
+        />
 </LinearLayout>
