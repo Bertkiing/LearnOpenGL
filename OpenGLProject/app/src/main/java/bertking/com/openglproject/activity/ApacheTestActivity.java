@@ -10,7 +10,6 @@ import org.apache.commons.lang3.math.NumberUtils;
 
 import bertking.com.openglproject.R;
 import bertking.com.openglproject.util.Util;
-import bertking.com.openglproject.util.vega.VegaLayoutManager;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -32,6 +31,16 @@ public class ApacheTestActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate: ");
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
     private void initDatas() {
         int i = NumberUtils.toInt("");//output:0
         Log.d(TAG, "initDatas: ===" + i);
@@ -39,7 +48,7 @@ public class ApacheTestActivity extends AppCompatActivity {
         Log.d(TAG, "initDatas: ===" + nullValue);
     }
 
-    @OnClick({R.id.btn_proxy, R.id.btn_other,R.id.btn_vega})
+    @OnClick({R.id.btn_proxy, R.id.btn_other, R.id.btn_vega})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_proxy:
@@ -52,4 +61,6 @@ public class ApacheTestActivity extends AppCompatActivity {
                 break;
         }
     }
+
+
 }
