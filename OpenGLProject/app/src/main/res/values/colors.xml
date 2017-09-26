@@ -63,4 +63,7 @@
 
 
     <color name="col_violet">#3f51b5</color>
+    <color name="green">#17bb0b</color>
+    <color name="red">#e50b1f</color>
+
 </resources>

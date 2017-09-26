@@ -10,6 +10,7 @@ import org.apache.commons.lang3.math.NumberUtils;
 
 import bertking.com.openglproject.R;
 import bertking.com.openglproject.util.Util;
+import bertking.com.openglproject.util.vega.VegaLayoutManager;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -38,13 +39,16 @@ public class ApacheTestActivity extends AppCompatActivity {
         Log.d(TAG, "initDatas: ===" + nullValue);
     }
 
-    @OnClick({R.id.btn_proxy, R.id.btn_other})
+    @OnClick({R.id.btn_proxy, R.id.btn_other,R.id.btn_vega})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_proxy:
                 Util.startOtherActivity(this, ProxyActivity.class);
                 break;
             case R.id.btn_other:
+                break;
+            case R.id.btn_vega:
+                Util.startOtherActivity(this, VegaActivity.class);
                 break;
         }
     }

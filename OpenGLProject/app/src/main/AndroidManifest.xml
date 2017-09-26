@@ -43,7 +43,8 @@
         <activity android:name=".activity.TestAAActivity" />
         <activity android:name=".activity.ApacheTestActivity" />
         <activity android:name=".activity.AsyncTaskActivity" />
-        <activity android:name=".activity.ProxyActivity"></activity>
+        <activity android:name=".activity.ProxyActivity" />
+        <activity android:name=".activity.VegaActivity" />
     </application>
 
 </manifest>
