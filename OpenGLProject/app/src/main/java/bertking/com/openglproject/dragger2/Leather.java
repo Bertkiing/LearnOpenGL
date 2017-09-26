@@ -2,6 +2,8 @@ package bertking.com.openglproject.dragger2;
 
 import android.util.Log;
 
+import javax.inject.Inject;
+
 import static bertking.com.openglproject.activity.RxjavaThreadActivity.TAG;
 
 /**
@@ -11,6 +13,7 @@ import static bertking.com.openglproject.activity.RxjavaThreadActivity.TAG;
  */
 
 public class Leather {
+
     public Leather() {
         Log.d(TAG, "Leather: ==="+"new Leather()");
     }
