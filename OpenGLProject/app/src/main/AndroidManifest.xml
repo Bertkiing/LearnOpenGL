@@ -45,7 +45,8 @@
         <activity android:name=".activity.AsyncTaskActivity" />
         <activity android:name=".activity.ProxyActivity" />
         <activity android:name=".activity.VegaActivity" />
-        <activity android:name=".kotlin.Kotlin1Activity"></activity>
+        <activity android:name=".kotlin.Kotlin1Activity" />
+        <activity android:name=".activity.ARounterTestActivity"></activity>
     </application>
 
 </manifest>

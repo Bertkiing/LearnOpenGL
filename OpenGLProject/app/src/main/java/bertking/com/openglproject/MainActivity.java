@@ -8,11 +8,13 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.android.debug.hv.ViewServer;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
+import bertking.com.openglproject.activity.ARounterTestActivity;
 import bertking.com.openglproject.activity.ApacheTestActivity;
 import bertking.com.openglproject.activity.AsyncTaskActivity;
 import bertking.com.openglproject.activity.CreditScoreActivity;
@@ -20,6 +22,7 @@ import bertking.com.openglproject.activity.OrientationActivity;
 import bertking.com.openglproject.activity.Scroller1Activity;
 import bertking.com.openglproject.activity.TestAAActivity;
 import bertking.com.openglproject.activity.TextRxJavaActivity;
+import bertking.com.openglproject.bean.TestPar;
 import bertking.com.openglproject.dragger2.Car;
 import bertking.com.openglproject.util.Util;
 import butterknife.BindView;
@@ -76,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @OnClick({R.id.tv_title, R.id.btn_bethes, R.id.btn_scroller, R.id.btn_credit, R.id.btn_screen_orientation,
-            R.id.btn_test_aa,R.id.btn_test_apache,R.id.btn_test_asyncTask})
+            R.id.btn_test_aa,R.id.btn_test_apache,R.id.btn_test_asyncTask,R.id.btn_test_aRouter})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_title:
@@ -102,6 +105,13 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn_test_asyncTask:
                 Util.startOtherActivity(this, AsyncTaskActivity.class);
+                break;
+            case R.id.btn_test_aRouter:
+                // 2. 跳转并携带参数
+                TestPar testPar = new TestPar("Bertking");
+                ARouter.getInstance().build("/activity/" + ARounterTestActivity.class.getSimpleName())
+//                        .withObject("key3", testPar)
+                        .navigation();
                 break;
         }
     }

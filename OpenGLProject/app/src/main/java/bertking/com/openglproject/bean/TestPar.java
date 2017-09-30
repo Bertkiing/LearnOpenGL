@@ -27,10 +27,12 @@ public class TestPar implements Parcelable {
         dest.writeValue(this.salary);
     }
 
-    public TestPar() {
+
+    public TestPar(String name) {
+        this.name = name;
     }
 
-    protected TestPar(Parcel in) {
+    public TestPar(Parcel in) {
         this.age = in.readInt();
         this.name = in.readString();
         this.sex = (Boolean) in.readValue(Boolean.class.getClassLoader());

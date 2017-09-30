@@ -1,0 +1,1 @@
+   1.要想使用Arouter 的 withObject()方法，该JavaBean 一定不能 implements  Serializable, 否则可能得不到数据;Parcelable 接口可以
