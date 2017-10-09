@@ -2,8 +2,10 @@ package bertking.com.openglproject;
 
 import android.app.Application;
 import android.content.Context;
+import android.util.Log;
 
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.didi.virtualapk.PluginManager;
 
 /**
  * Created by king on 2017/8/26.
@@ -12,6 +14,7 @@ import com.alibaba.android.arouter.launcher.ARouter;
  */
 
 public class MyApplication extends Application {
+    public static final String TAG = MyApplication.class.getSimpleName();
     private static Application instance;
     private        Context     mContext;
     boolean isDebug = true;
@@ -22,11 +25,18 @@ public class MyApplication extends Application {
     }
 
     @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        PluginManager.getInstance(base).init();
+        Log.d(TAG, "attachBaseContext: ==========");
+    }
+
+    @Override
     public void onCreate() {
         super.onCreate();
         instance = this;
         mContext = getApplicationContext();
-
+        Log.d(TAG, "onCreate: ===============");
         initARouter();
 
         DaggerAppComponent
